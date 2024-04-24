@@ -479,6 +479,10 @@
     [
       "e95ae265-6212-4dd0-9ded-65f9e093863e",
       "Power Supply"
+    ],
+    [
+      "8d741b68-27dc-429d-ae72-be5d1a87733e",
+      "Driver B"
     ]
   ],
   "text_variables": {}

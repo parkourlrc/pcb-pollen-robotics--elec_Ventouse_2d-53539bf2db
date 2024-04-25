@@ -2248,10 +2248,6 @@
     (stroke (width 0) (type default))
     (uuid 6e0b6d78-e796-4347-84c7-134cf6949ce2)
   )
-  (wire (pts (xy 68.58 111.76) (xy 50.8 111.76))
-    (stroke (width 0) (type default))
-    (uuid 6f34a354-c7b1-4387-8966-187940b7fad6)
-  )
   (wire (pts (xy 228.6 154.94) (xy 228.6 185.42))
     (stroke (width 0) (type default))
     (uuid 707ac750-1052-4cff-8b64-e863c314d241)
@@ -2276,6 +2272,10 @@
   (wire (pts (xy 139.7 137.16) (xy 160.02 137.16))
     (stroke (width 0) (type default))
     (uuid 750e4965-8e62-49cf-b1bb-c0f1f6a2526f)
+  )
+  (wire (pts (xy 68.58 109.22) (xy 50.8 109.22))
+    (stroke (width 0) (type default))
+    (uuid 753bfcc9-e52e-4f1d-a234-4db3a1f826ac)
   )
   (wire (pts (xy 157.48 88.9) (xy 157.48 99.06))
     (stroke (width 0) (type default))
@@ -2493,6 +2493,10 @@
     (stroke (width 0) (type default))
     (uuid ba7b135f-c5ff-41d2-8937-35f82377cd72)
   )
+  (wire (pts (xy 55.88 111.76) (xy 50.8 111.76))
+    (stroke (width 0) (type default))
+    (uuid bbe19205-39fa-46c2-a983-c1af96484456)
+  )
   (wire (pts (xy 129.54 88.9) (xy 157.48 88.9))
     (stroke (width 0) (type default))
     (uuid bc15816d-b23b-4bce-8488-97649ef1bf48)
@@ -2543,10 +2547,6 @@
   (wire (pts (xy 210.82 101.6) (xy 210.82 99.06))
     (stroke (width 0) (type default))
     (uuid ca930e3f-066c-49f8-8581-66ed1b269119)
-  )
-  (wire (pts (xy 55.88 109.22) (xy 50.8 109.22))
-    (stroke (width 0) (type default))
-    (uuid caa64ad6-80a6-48c9-8e9f-e62b2aabb0e9)
   )
   (wire (pts (xy 50.8 134.62) (xy 76.2 134.62))
     (stroke (width 0) (type default))
@@ -4355,9 +4355,9 @@
     (uuid f866c7e1-40ea-408a-b0c8-b92764ed716e)
   )
 
-  (hierarchical_label "Vref_2V5" (shape input) (at 68.58 111.76 0) (fields_autoplaced)
+  (hierarchical_label "Vref_2V5" (shape input) (at 68.58 109.22 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 423c140d-cd2b-499a-88f2-4af45b4c9e82)
+    (uuid 326fd536-52ab-4d27-9d11-c9d931c7a59a)
   )
   (hierarchical_label "Vref_2V5" (shape input) (at 340.36 91.44 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
@@ -4387,6 +4387,11 @@
     (instances
       (project "elec_Ventouse_2d"
         (path "/bc05f5da-608c-4912-90e4-36b13d989976/8d741b68-27dc-429d-ae72-be5d1a87733e"
+          (reference "#PWR060") (unit 1)
+        )
+      )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "#PWR060") (unit 1)
         )
       )
@@ -4431,6 +4436,36 @@
           (reference "C20") (unit 1)
         )
       )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
+          (reference "C20") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_name "+3V3_1") (lib_id "power:+3V3") (at 55.88 111.76 270) (mirror x) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 0c5a78a8-9f83-446f-a57b-3105a45dac7a)
+    (property "Reference" "#PWR01" (at 52.07 111.76 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+3V3" (at 58.42 110.49 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "" (at 55.88 111.76 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 55.88 111.76 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid ff31688a-a179-463c-86de-901bf8e3793f))
+    (instances
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
+          (reference "#PWR01") (unit 1)
+        )
+      )
     )
   )
 
@@ -4453,6 +4488,11 @@
     (instances
       (project "elec_Ventouse_2d"
         (path "/bc05f5da-608c-4912-90e4-36b13d989976/8d741b68-27dc-429d-ae72-be5d1a87733e"
+          (reference "#PWR069") (unit 1)
+        )
+      )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "#PWR069") (unit 1)
         )
       )
@@ -4481,6 +4521,11 @@
           (reference "#PWR054") (unit 1)
         )
       )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
+          (reference "#PWR054") (unit 1)
+        )
+      )
     )
   )
 
@@ -4503,6 +4548,11 @@
     (instances
       (project "elec_Ventouse_2d"
         (path "/bc05f5da-608c-4912-90e4-36b13d989976/8d741b68-27dc-429d-ae72-be5d1a87733e"
+          (reference "#PWR086") (unit 1)
+        )
+      )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "#PWR086") (unit 1)
         )
       )
@@ -4531,6 +4581,11 @@
           (reference "#PWR066") (unit 1)
         )
       )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
+          (reference "#PWR066") (unit 1)
+        )
+      )
     )
   )
 
@@ -4553,6 +4608,11 @@
     (instances
       (project "elec_Ventouse_2d"
         (path "/bc05f5da-608c-4912-90e4-36b13d989976/8d741b68-27dc-429d-ae72-be5d1a87733e"
+          (reference "#PWR083") (unit 1)
+        )
+      )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "#PWR083") (unit 1)
         )
       )
@@ -4597,6 +4657,11 @@
           (reference "R11") (unit 1)
         )
       )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
+          (reference "R11") (unit 1)
+        )
+      )
     )
   )
 
@@ -4630,6 +4695,11 @@
     (instances
       (project "elec_Ventouse_2d"
         (path "/bc05f5da-608c-4912-90e4-36b13d989976/8d741b68-27dc-429d-ae72-be5d1a87733e"
+          (reference "Q7") (unit 1)
+        )
+      )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "Q7") (unit 1)
         )
       )
@@ -4674,6 +4744,11 @@
           (reference "C14") (unit 1)
         )
       )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
+          (reference "C14") (unit 1)
+        )
+      )
     )
   )
 
@@ -4715,6 +4790,11 @@
           (reference "R7") (unit 1)
         )
       )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
+          (reference "R7") (unit 1)
+        )
+      )
     )
   )
 
@@ -4737,6 +4817,11 @@
     (instances
       (project "elec_Ventouse_2d"
         (path "/bc05f5da-608c-4912-90e4-36b13d989976/8d741b68-27dc-429d-ae72-be5d1a87733e"
+          (reference "#PWR049") (unit 1)
+        )
+      )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "#PWR049") (unit 1)
         )
       )
@@ -4781,6 +4866,11 @@
           (reference "U8") (unit 1)
         )
       )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
+          (reference "U8") (unit 1)
+        )
+      )
     )
   )
 
@@ -4803,6 +4893,11 @@
     (instances
       (project "elec_Ventouse_2d"
         (path "/bc05f5da-608c-4912-90e4-36b13d989976/8d741b68-27dc-429d-ae72-be5d1a87733e"
+          (reference "#PWR063") (unit 1)
+        )
+      )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "#PWR063") (unit 1)
         )
       )
@@ -4847,6 +4942,11 @@
           (reference "C21") (unit 1)
         )
       )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
+          (reference "C21") (unit 1)
+        )
+      )
     )
   )
 
@@ -4885,6 +4985,11 @@
     (instances
       (project "elec_Ventouse_2d"
         (path "/bc05f5da-608c-4912-90e4-36b13d989976/8d741b68-27dc-429d-ae72-be5d1a87733e"
+          (reference "R6") (unit 1)
+        )
+      )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "R6") (unit 1)
         )
       )
@@ -4929,6 +5034,11 @@
           (reference "R14") (unit 1)
         )
       )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
+          (reference "R14") (unit 1)
+        )
+      )
     )
   )
 
@@ -4951,6 +5061,11 @@
     (instances
       (project "elec_Ventouse_2d"
         (path "/bc05f5da-608c-4912-90e4-36b13d989976/8d741b68-27dc-429d-ae72-be5d1a87733e"
+          (reference "#PWR057") (unit 1)
+        )
+      )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "#PWR057") (unit 1)
         )
       )
@@ -4995,6 +5110,11 @@
           (reference "R9") (unit 1)
         )
       )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
+          (reference "R9") (unit 1)
+        )
+      )
     )
   )
 
@@ -5028,6 +5148,11 @@
     (instances
       (project "elec_Ventouse_2d"
         (path "/bc05f5da-608c-4912-90e4-36b13d989976/8d741b68-27dc-429d-ae72-be5d1a87733e"
+          (reference "Q10") (unit 1)
+        )
+      )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "Q10") (unit 1)
         )
       )
@@ -5072,6 +5197,11 @@
           (reference "C17") (unit 1)
         )
       )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
+          (reference "C17") (unit 1)
+        )
+      )
     )
   )
 
@@ -5094,6 +5224,11 @@
     (instances
       (project "elec_Ventouse_2d"
         (path "/bc05f5da-608c-4912-90e4-36b13d989976/8d741b68-27dc-429d-ae72-be5d1a87733e"
+          (reference "#PWR067") (unit 1)
+        )
+      )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "#PWR067") (unit 1)
         )
       )
@@ -5122,6 +5257,11 @@
           (reference "#PWR071") (unit 1)
         )
       )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
+          (reference "#PWR071") (unit 1)
+        )
+      )
     )
   )
 
@@ -5144,6 +5284,11 @@
     (instances
       (project "elec_Ventouse_2d"
         (path "/bc05f5da-608c-4912-90e4-36b13d989976/8d741b68-27dc-429d-ae72-be5d1a87733e"
+          (reference "#PWR096") (unit 1)
+        )
+      )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "#PWR096") (unit 1)
         )
       )
@@ -5188,6 +5333,11 @@
           (reference "R20") (unit 1)
         )
       )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
+          (reference "R20") (unit 1)
+        )
+      )
     )
   )
 
@@ -5213,6 +5363,11 @@
           (reference "#PWR092") (unit 1)
         )
       )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
+          (reference "#PWR092") (unit 1)
+        )
+      )
     )
   )
 
@@ -5235,6 +5390,11 @@
     (instances
       (project "elec_Ventouse_2d"
         (path "/bc05f5da-608c-4912-90e4-36b13d989976/8d741b68-27dc-429d-ae72-be5d1a87733e"
+          (reference "#PWR094") (unit 1)
+        )
+      )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "#PWR094") (unit 1)
         )
       )
@@ -5271,6 +5431,11 @@
     (instances
       (project "elec_Ventouse_2d"
         (path "/bc05f5da-608c-4912-90e4-36b13d989976/8d741b68-27dc-429d-ae72-be5d1a87733e"
+          (reference "Q8") (unit 1)
+        )
+      )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "Q8") (unit 1)
         )
       )
@@ -5315,6 +5480,11 @@
           (reference "C31") (unit 1)
         )
       )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
+          (reference "C31") (unit 1)
+        )
+      )
     )
   )
 
@@ -5337,6 +5507,11 @@
     (instances
       (project "elec_Ventouse_2d"
         (path "/bc05f5da-608c-4912-90e4-36b13d989976/8d741b68-27dc-429d-ae72-be5d1a87733e"
+          (reference "#PWR097") (unit 1)
+        )
+      )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "#PWR097") (unit 1)
         )
       )
@@ -5381,6 +5556,11 @@
           (reference "C15") (unit 1)
         )
       )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
+          (reference "C15") (unit 1)
+        )
+      )
     )
   )
 
@@ -5403,6 +5583,11 @@
     (instances
       (project "elec_Ventouse_2d"
         (path "/bc05f5da-608c-4912-90e4-36b13d989976/8d741b68-27dc-429d-ae72-be5d1a87733e"
+          (reference "#PWR081") (unit 1)
+        )
+      )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "#PWR081") (unit 1)
         )
       )
@@ -5447,6 +5632,11 @@
           (reference "C19") (unit 1)
         )
       )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
+          (reference "C19") (unit 1)
+        )
+      )
     )
   )
 
@@ -5472,6 +5662,11 @@
           (reference "#PWR084") (unit 1)
         )
       )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
+          (reference "#PWR084") (unit 1)
+        )
+      )
     )
   )
 
@@ -5494,6 +5689,11 @@
     (instances
       (project "elec_Ventouse_2d"
         (path "/bc05f5da-608c-4912-90e4-36b13d989976/8d741b68-27dc-429d-ae72-be5d1a87733e"
+          (reference "#PWR056") (unit 1)
+        )
+      )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "#PWR056") (unit 1)
         )
       )
@@ -5538,6 +5738,11 @@
           (reference "TH2") (unit 1)
         )
       )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
+          (reference "TH2") (unit 1)
+        )
+      )
     )
   )
 
@@ -5576,6 +5781,11 @@
     (instances
       (project "elec_Ventouse_2d"
         (path "/bc05f5da-608c-4912-90e4-36b13d989976/8d741b68-27dc-429d-ae72-be5d1a87733e"
+          (reference "C16") (unit 1)
+        )
+      )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "C16") (unit 1)
         )
       )
@@ -5620,6 +5830,11 @@
           (reference "R13") (unit 1)
         )
       )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
+          (reference "R13") (unit 1)
+        )
+      )
     )
   )
 
@@ -5658,6 +5873,11 @@
     (instances
       (project "elec_Ventouse_2d"
         (path "/bc05f5da-608c-4912-90e4-36b13d989976/8d741b68-27dc-429d-ae72-be5d1a87733e"
+          (reference "D6") (unit 1)
+        )
+      )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "D6") (unit 1)
         )
       )
@@ -5702,6 +5922,11 @@
           (reference "C34") (unit 1)
         )
       )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
+          (reference "C34") (unit 1)
+        )
+      )
     )
   )
 
@@ -5727,6 +5952,11 @@
           (reference "#PWR091") (unit 1)
         )
       )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
+          (reference "#PWR091") (unit 1)
+        )
+      )
     )
   )
 
@@ -5749,6 +5979,11 @@
     (instances
       (project "elec_Ventouse_2d"
         (path "/bc05f5da-608c-4912-90e4-36b13d989976/8d741b68-27dc-429d-ae72-be5d1a87733e"
+          (reference "#PWR072") (unit 1)
+        )
+      )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "#PWR072") (unit 1)
         )
       )
@@ -5797,6 +6032,11 @@
           (reference "J6") (unit 1)
         )
       )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
+          (reference "J6") (unit 1)
+        )
+      )
     )
   )
 
@@ -5830,6 +6070,11 @@
     (instances
       (project "elec_Ventouse_2d"
         (path "/bc05f5da-608c-4912-90e4-36b13d989976/8d741b68-27dc-429d-ae72-be5d1a87733e"
+          (reference "Q12") (unit 1)
+        )
+      )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "Q12") (unit 1)
         )
       )
@@ -5874,6 +6119,11 @@
           (reference "R12") (unit 1)
         )
       )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
+          (reference "R12") (unit 1)
+        )
+      )
     )
   )
 
@@ -5896,6 +6146,11 @@
     (instances
       (project "elec_Ventouse_2d"
         (path "/bc05f5da-608c-4912-90e4-36b13d989976/8d741b68-27dc-429d-ae72-be5d1a87733e"
+          (reference "#PWR055") (unit 1)
+        )
+      )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "#PWR055") (unit 1)
         )
       )
@@ -5940,6 +6195,11 @@
           (reference "C26") (unit 1)
         )
       )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
+          (reference "C26") (unit 1)
+        )
+      )
     )
   )
 
@@ -5962,6 +6222,11 @@
     (instances
       (project "elec_Ventouse_2d"
         (path "/bc05f5da-608c-4912-90e4-36b13d989976/8d741b68-27dc-429d-ae72-be5d1a87733e"
+          (reference "#PWR059") (unit 1)
+        )
+      )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "#PWR059") (unit 1)
         )
       )
@@ -6039,6 +6304,11 @@
           (reference "U7") (unit 1)
         )
       )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
+          (reference "U7") (unit 1)
+        )
+      )
     )
   )
 
@@ -6064,6 +6334,11 @@
           (reference "#PWR068") (unit 1)
         )
       )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
+          (reference "#PWR068") (unit 1)
+        )
+      )
     )
   )
 
@@ -6086,6 +6361,11 @@
     (instances
       (project "elec_Ventouse_2d"
         (path "/bc05f5da-608c-4912-90e4-36b13d989976/8d741b68-27dc-429d-ae72-be5d1a87733e"
+          (reference "#PWR082") (unit 1)
+        )
+      )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "#PWR082") (unit 1)
         )
       )
@@ -6132,6 +6412,11 @@
           (reference "J4") (unit 1)
         )
       )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
+          (reference "J4") (unit 1)
+        )
+      )
     )
   )
 
@@ -6154,6 +6439,11 @@
     (instances
       (project "elec_Ventouse_2d"
         (path "/bc05f5da-608c-4912-90e4-36b13d989976/8d741b68-27dc-429d-ae72-be5d1a87733e"
+          (reference "#PWR088") (unit 1)
+        )
+      )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "#PWR088") (unit 1)
         )
       )
@@ -6193,6 +6483,11 @@
           (reference "Q11") (unit 1)
         )
       )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
+          (reference "Q11") (unit 1)
+        )
+      )
     )
   )
 
@@ -6218,6 +6513,11 @@
           (reference "#PWR090") (unit 1)
         )
       )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
+          (reference "#PWR090") (unit 1)
+        )
+      )
     )
   )
 
@@ -6240,6 +6540,11 @@
     (instances
       (project "elec_Ventouse_2d"
         (path "/bc05f5da-608c-4912-90e4-36b13d989976/8d741b68-27dc-429d-ae72-be5d1a87733e"
+          (reference "#PWR058") (unit 1)
+        )
+      )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "#PWR058") (unit 1)
         )
       )
@@ -6284,6 +6589,11 @@
           (reference "C27") (unit 1)
         )
       )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
+          (reference "C27") (unit 1)
+        )
+      )
     )
   )
 
@@ -6306,6 +6616,11 @@
     (instances
       (project "elec_Ventouse_2d"
         (path "/bc05f5da-608c-4912-90e4-36b13d989976/8d741b68-27dc-429d-ae72-be5d1a87733e"
+          (reference "#PWR085") (unit 1)
+        )
+      )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "#PWR085") (unit 1)
         )
       )
@@ -6342,6 +6657,11 @@
     (instances
       (project "elec_Ventouse_2d"
         (path "/bc05f5da-608c-4912-90e4-36b13d989976/8d741b68-27dc-429d-ae72-be5d1a87733e"
+          (reference "Q9") (unit 1)
+        )
+      )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "Q9") (unit 1)
         )
       )
@@ -6386,6 +6706,11 @@
           (reference "R5") (unit 1)
         )
       )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
+          (reference "R5") (unit 1)
+        )
+      )
     )
   )
 
@@ -6427,6 +6752,11 @@
           (reference "U4") (unit 1)
         )
       )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
+          (reference "U4") (unit 1)
+        )
+      )
     )
   )
 
@@ -6449,6 +6779,11 @@
     (instances
       (project "elec_Ventouse_2d"
         (path "/bc05f5da-608c-4912-90e4-36b13d989976/8d741b68-27dc-429d-ae72-be5d1a87733e"
+          (reference "#PWR087") (unit 1)
+        )
+      )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "#PWR087") (unit 1)
         )
       )
@@ -6493,6 +6828,11 @@
           (reference "C33") (unit 1)
         )
       )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
+          (reference "C33") (unit 1)
+        )
+      )
     )
   )
 
@@ -6531,6 +6871,11 @@
     (instances
       (project "elec_Ventouse_2d"
         (path "/bc05f5da-608c-4912-90e4-36b13d989976/8d741b68-27dc-429d-ae72-be5d1a87733e"
+          (reference "C28") (unit 1)
+        )
+      )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "C28") (unit 1)
         )
       )
@@ -6575,6 +6920,11 @@
           (reference "R15") (unit 1)
         )
       )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
+          (reference "R15") (unit 1)
+        )
+      )
     )
   )
 
@@ -6613,6 +6963,11 @@
     (instances
       (project "elec_Ventouse_2d"
         (path "/bc05f5da-608c-4912-90e4-36b13d989976/8d741b68-27dc-429d-ae72-be5d1a87733e"
+          (reference "R10") (unit 1)
+        )
+      )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "R10") (unit 1)
         )
       )
@@ -6657,6 +7012,11 @@
           (reference "C32") (unit 1)
         )
       )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
+          (reference "C32") (unit 1)
+        )
+      )
     )
   )
 
@@ -6679,6 +7039,11 @@
     (instances
       (project "elec_Ventouse_2d"
         (path "/bc05f5da-608c-4912-90e4-36b13d989976/8d741b68-27dc-429d-ae72-be5d1a87733e"
+          (reference "#PWR062") (unit 1)
+        )
+      )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "#PWR062") (unit 1)
         )
       )
@@ -6723,6 +7088,11 @@
           (reference "C18") (unit 1)
         )
       )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
+          (reference "C18") (unit 1)
+        )
+      )
     )
   )
 
@@ -6745,6 +7115,11 @@
     (instances
       (project "elec_Ventouse_2d"
         (path "/bc05f5da-608c-4912-90e4-36b13d989976/8d741b68-27dc-429d-ae72-be5d1a87733e"
+          (reference "#PWR064") (unit 1)
+        )
+      )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "#PWR064") (unit 1)
         )
       )
@@ -6789,29 +7164,9 @@
           (reference "C30") (unit 1)
         )
       )
-    )
-  )
-
-  (symbol (lib_name "+3V3_1") (lib_id "power:+3V3") (at 55.88 109.22 270) (mirror x) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid fd881f5d-b19f-45c9-9c5c-72ba5846f0a0)
-    (property "Reference" "#PWR065" (at 52.07 109.22 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+3V3" (at 59.69 109.22 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "" (at 55.88 109.22 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 55.88 109.22 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 386ef4ea-def4-4bf0-9a56-81f17eb9b1ca))
-    (instances
-      (project "elec_Ventouse_2d"
-        (path "/bc05f5da-608c-4912-90e4-36b13d989976/8d741b68-27dc-429d-ae72-be5d1a87733e"
-          (reference "#PWR065") (unit 1)
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
+          (reference "C30") (unit 1)
         )
       )
     )
@@ -6839,6 +7194,15 @@
           (reference "#PWR095") (unit 1)
         )
       )
+      (project "driver_B"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
+          (reference "#PWR095") (unit 1)
+        )
+      )
     )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
   )
 )

@@ -1614,14 +1614,8 @@
   (bus_alias "Bridge_A_I" (members "Sense_A_U" "Sense_A_V"))
   (bus_alias "PWM_A" (members "UH_A" "UL_A" "VH_A" "VL_A" "WH_A" "WL_A"))
   (bus_alias "SPI_A" (members "A_CS" "A_SCK" "A_MISO" "A_MOSI"))
-  (junction (at 335.28 147.32) (diameter 0) (color 0 0 0 0)
-    (uuid 045c777d-a45a-4b8d-9537-d2d483ced9d9)
-  )
   (junction (at 231.14 251.46) (diameter 0) (color 0 0 0 0)
     (uuid 1d4dd531-c879-4055-a3f4-4c2db6bc1f0a)
-  )
-  (junction (at 335.28 91.44) (diameter 0) (color 0 0 0 0)
-    (uuid 274dbf3c-eb8c-4adf-8366-6874344b1cbb)
   )
   (junction (at 215.9 154.94) (diameter 0) (color 0 0 0 0)
     (uuid 44dad602-b54f-42e1-afeb-e4f0a411cca2)
@@ -1650,11 +1644,23 @@
   (junction (at 152.4 119.38) (diameter 0) (color 0 0 0 0)
     (uuid 5e1f6f6e-6301-45dd-a2ee-17fb52480942)
   )
+  (junction (at 335.28 157.48) (diameter 0) (color 0 0 0 0)
+    (uuid 6a680bae-785a-49f4-a690-e440f7d453a4)
+  )
+  (junction (at 335.28 101.6) (diameter 0) (color 0 0 0 0)
+    (uuid 6dbe93bf-1b26-4217-b8fd-cec6d53b53c5)
+  )
+  (junction (at 346.71 88.9) (diameter 0) (color 0 0 0 0)
+    (uuid 71a31029-fe9e-4777-9708-f1ca58024bf8)
+  )
   (junction (at 271.78 63.5) (diameter 0) (color 0 0 0 0)
     (uuid 72ab9923-cc82-444b-8c94-eab5ec80a365)
   )
   (junction (at 271.78 45.72) (diameter 0) (color 0 0 0 0)
     (uuid 7c44e277-a598-476c-988f-eb743b8ec536)
+  )
+  (junction (at 345.44 144.78) (diameter 0) (color 0 0 0 0)
+    (uuid 8183f6d9-0137-4ec0-b73c-9709727cb510)
   )
   (junction (at 215.9 139.7) (diameter 0) (color 0 0 0 0)
     (uuid 81e1f19a-e432-435e-a8db-1d1e5c6833a7)
@@ -1798,7 +1804,7 @@
     (stroke (width 0.75) (type default))
     (uuid 025d5eb3-fff9-4005-aff3-32d27c78adc7)
   )
-  (wire (pts (xy 340.36 91.44) (xy 335.28 91.44))
+  (wire (pts (xy 349.25 105.41) (xy 335.28 105.41))
     (stroke (width 0) (type default))
     (uuid 0263439b-120d-4926-bcf6-bf3f19fb27c8)
   )
@@ -1817,6 +1823,10 @@
   (wire (pts (xy 271.78 81.28) (xy 271.78 78.74))
     (stroke (width 0.75) (type default))
     (uuid 06fdf447-fbd6-4a70-8a9e-104a4d011554)
+  )
+  (wire (pts (xy 55.88 111.76) (xy 50.8 111.76))
+    (stroke (width 0) (type default))
+    (uuid 07a0f438-0312-4825-a016-0348b90d5fd6)
   )
   (wire (pts (xy 284.48 45.72) (xy 287.02 45.72))
     (stroke (width 0.75) (type default))
@@ -1879,7 +1889,7 @@
     (stroke (width 0) (type default))
     (uuid 159528ba-e42d-420b-8f3b-2c080678e230)
   )
-  (wire (pts (xy 332.74 88.9) (xy 340.36 88.9))
+  (wire (pts (xy 332.74 88.9) (xy 337.82 88.9))
     (stroke (width 0) (type default))
     (uuid 15ce78f6-48aa-432b-b8c0-a6a2b2227fe1)
   )
@@ -2095,9 +2105,9 @@
     (stroke (width 0) (type default))
     (uuid 55e2e08e-a6c8-43b5-906b-a77cd8c0c4ff)
   )
-  (wire (pts (xy 68.58 111.76) (xy 50.8 111.76))
+  (wire (pts (xy 68.58 109.22) (xy 50.8 109.22))
     (stroke (width 0) (type default))
-    (uuid 57b89396-cea8-4b50-96b1-22ce8c447fb5)
+    (uuid 569b967b-2dd9-47be-91cf-9c7c7ebffa2a)
   )
   (wire (pts (xy 317.5 121.92) (xy 317.5 134.62))
     (stroke (width 0) (type default))
@@ -2146,13 +2156,21 @@
     (stroke (width 0) (type default))
     (uuid 5e7cbbd4-5f79-472e-a5bf-29faabdb850d)
   )
-  (wire (pts (xy 335.28 147.32) (xy 340.36 147.32))
+  (wire (pts (xy 346.71 88.9) (xy 346.71 91.44))
+    (stroke (width 0) (type default))
+    (uuid 5f6e25d0-174e-4101-8793-7a77419998f8)
+  )
+  (wire (pts (xy 335.28 161.29) (xy 347.98 161.29))
     (stroke (width 0) (type default))
     (uuid 5feacaa3-9118-4528-bd4d-16acfd5f3277)
   )
   (wire (pts (xy 312.42 147.32) (xy 309.88 147.32))
     (stroke (width 0) (type default))
     (uuid 6104ed5d-1bc8-4204-b253-f75e65f3c265)
+  )
+  (wire (pts (xy 345.44 151.13) (xy 345.44 152.4))
+    (stroke (width 0) (type default))
+    (uuid 66aac171-ad5f-4e4a-816d-e7c40f6b0c17)
   )
   (wire (pts (xy 271.78 185.42) (xy 271.78 187.96))
     (stroke (width 0.75) (type default))
@@ -2210,10 +2228,6 @@
   (wire (pts (xy 271.78 165.1) (xy 271.78 167.64))
     (stroke (width 0.75) (type default))
     (uuid 79d37446-1ce9-4811-94a5-0a26ddede165)
-  )
-  (wire (pts (xy 55.88 109.22) (xy 50.8 109.22))
-    (stroke (width 0) (type default))
-    (uuid 7a2ffa2d-b911-466c-96fe-93dcca86a670)
   )
   (wire (pts (xy 243.84 121.92) (xy 243.84 63.5))
     (stroke (width 0) (type default))
@@ -2289,6 +2303,10 @@
     (uuid 8a7618ae-c24b-4e97-a14f-e7f70c21e2bb)
   )
 
+  (wire (pts (xy 342.9 88.9) (xy 346.71 88.9))
+    (stroke (width 0) (type default))
+    (uuid 8bc680af-7a07-4e74-a199-ea777a385fe3)
+  )
   (wire (pts (xy 149.86 114.3) (xy 149.86 111.76))
     (stroke (width 0) (type default))
     (uuid 8c23c332-3463-4830-948d-bd5774a5c61e)
@@ -2371,6 +2389,10 @@
   (wire (pts (xy 271.78 167.64) (xy 274.32 167.64))
     (stroke (width 0.75) (type default))
     (uuid 9d37e4e6-d475-44d5-8583-91889d6b84b8)
+  )
+  (wire (pts (xy 346.71 96.52) (xy 346.71 97.79))
+    (stroke (width 0) (type default))
+    (uuid 9d501e73-b1ce-4b64-8246-85381d7e530d)
   )
   (wire (pts (xy 309.88 91.44) (xy 312.42 91.44))
     (stroke (width 0) (type default))
@@ -2477,6 +2499,10 @@
     (stroke (width 0) (type default))
     (uuid b8045238-6e05-4806-ae1c-5ecb0636c715)
   )
+  (wire (pts (xy 341.63 144.78) (xy 345.44 144.78))
+    (stroke (width 0) (type default))
+    (uuid b8e03ec1-8789-499b-993f-9d77ef96574b)
+  )
   (wire (pts (xy 200.66 149.86) (xy 205.74 149.86))
     (stroke (width 0) (type default))
     (uuid ba8c0c10-77f0-4c11-b9f7-89f93d24e410)
@@ -2534,6 +2560,10 @@
     (stroke (width 0) (type default))
     (uuid c6963d69-b158-407d-b252-022bf0c0a416)
   )
+  (wire (pts (xy 345.44 144.78) (xy 347.98 144.78))
+    (stroke (width 0) (type default))
+    (uuid c8205827-ccfa-4427-9742-c2a5d661cd87)
+  )
   (wire (pts (xy 271.78 58.42) (xy 271.78 60.96))
     (stroke (width 0.75) (type default))
     (uuid ca8955e4-1ca7-411e-930d-49924ba5f735)
@@ -2557,6 +2587,10 @@
   (wire (pts (xy 200.66 101.6) (xy 203.2 101.6))
     (stroke (width 0) (type default))
     (uuid d24af9c2-b868-411b-8a87-83fba4eca893)
+  )
+  (wire (pts (xy 346.71 88.9) (xy 349.25 88.9))
+    (stroke (width 0) (type default))
+    (uuid d345602e-5cf0-45f3-93f6-98cb4da9f67c)
   )
   (wire (pts (xy 304.8 101.6) (xy 304.8 104.14))
     (stroke (width 0) (type default))
@@ -2611,7 +2645,7 @@
     (stroke (width 0) (type default))
     (uuid e071748d-5dda-42c3-be67-0a951ef2c6df)
   )
-  (wire (pts (xy 332.74 144.78) (xy 340.36 144.78))
+  (wire (pts (xy 332.74 144.78) (xy 336.55 144.78))
     (stroke (width 0) (type default))
     (uuid e0944c07-fe82-465e-85d5-5e90874b5a8f)
   )
@@ -2636,6 +2670,10 @@
     (uuid e7947d81-b9fb-4805-bd95-4918492d2486)
   )
 
+  (wire (pts (xy 335.28 105.41) (xy 335.28 101.6))
+    (stroke (width 0) (type default))
+    (uuid e82c56eb-da71-4603-b988-b4c7d0b2bcf9)
+  )
   (wire (pts (xy 58.42 124.46) (xy 50.8 124.46))
     (stroke (width 0) (type default))
     (uuid e85d4a8b-c4bf-4d62-81fa-a222aa6b37a5)
@@ -2706,6 +2744,10 @@
     (stroke (width 0) (type default))
     (uuid f4606c75-8dac-448e-af2b-0c46f2f01a9c)
   )
+  (wire (pts (xy 345.44 144.78) (xy 345.44 146.05))
+    (stroke (width 0) (type default))
+    (uuid f49aa2ee-57cb-4bf1-a858-3c4ee44f34d4)
+  )
   (bus (pts (xy 78.74 124.46) (xy 78.74 127))
     (stroke (width 0) (type default))
     (uuid f5cc6a5a-bc02-4639-b64a-678e6550737e)
@@ -2727,6 +2769,10 @@
   (wire (pts (xy 106.68 193.04) (xy 99.06 193.04))
     (stroke (width 0) (type default))
     (uuid fa2d37bb-3986-4af3-805a-9988658c179c)
+  )
+  (wire (pts (xy 335.28 161.29) (xy 335.28 157.48))
+    (stroke (width 0) (type default))
+    (uuid fad420ab-0bcc-4d87-852e-09906d35e0b7)
   )
   (wire (pts (xy 142.24 119.38) (xy 144.78 119.38))
     (stroke (width 0) (type default))
@@ -4231,7 +4277,7 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 047f6ef1-0174-43d4-a667-6e6f9a1d8f90)
   )
-  (label "A_MOSI" (at 58.42 147.32 0)
+  (label "A_MOSI" (at 58.42 147.32 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 165ffc81-e352-407f-9b00-d9bf4b8521a4)
   )
@@ -4251,9 +4297,13 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 37e55725-fdd2-408e-8413-60bc1cee8334)
   )
-  (label "A_SCK" (at 58.42 144.78 0)
+  (label "A_SCK" (at 58.42 144.78 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 38a4c759-d75e-45ad-90eb-f51420510141)
+  )
+  (label "Sense_A_V" (at 347.98 144.78 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 4b4293bd-f9bd-402e-ba2f-98a85a7e9c6c)
   )
   (label "VH_A" (at 55.88 132.08 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
@@ -4283,19 +4333,11 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 67879117-3db2-4282-9826-2ffd82f2a37d)
   )
-  (label "Sense_A_V" (at 340.36 144.78 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 7c513f53-65fd-42d5-9ff3-032daadea3d3)
-  )
   (label "A_SCK" (at 152.4 162.56 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 83f1ce02-fa9e-4432-8b43-8395bab9ce31)
   )
-  (label "Sense_A_U" (at 340.36 88.9 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 84b6a2f8-0e74-42a3-ad70-fa762a32bc60)
-  )
-  (label "Sense_A_V" (at 55.88 116.84 0)
+  (label "Sense_A_V" (at 55.88 116.84 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 8c31ca4a-afbd-45bc-b50c-14ab42ea4a4f)
   )
@@ -4311,7 +4353,7 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 8eb76ccc-809b-4ad1-a1a6-d8878816725c)
   )
-  (label "Sense_A_U" (at 55.88 114.3 0)
+  (label "Sense_A_U" (at 55.88 114.3 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 901dd98a-01bb-487c-b195-25ab3bd40489)
   )
@@ -4319,7 +4361,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 90b91fdc-9a8a-4708-bd02-18c760666f13)
   )
-  (label "A_MISO" (at 58.42 149.86 0)
+  (label "A_MISO" (at 58.42 149.86 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 955adb19-b8f3-4521-8007-5ff7e2b9eb72)
   )
@@ -4339,7 +4381,7 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid bfbd47a7-b9ef-489a-b884-f1e500746ab4)
   )
-  (label "A_CS" (at 58.42 142.24 0)
+  (label "A_CS" (at 58.42 142.24 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid c0ec1463-db5d-4161-be6f-9a31a9a13945)
   )
@@ -4355,22 +4397,72 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid e3d98a5e-771f-4b89-874f-65bff8e973d0)
   )
+  (label "Sense_A_U" (at 349.25 88.9 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid e4ee11a6-5abe-41b5-93c7-abfcf61387e4)
+  )
   (label "A_CS" (at 152.4 160.02 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid eb890c0e-5299-4905-9260-4d38ddf09023)
   )
 
-  (hierarchical_label "Vref_2V5" (shape input) (at 68.58 111.76 0) (fields_autoplaced)
+  (hierarchical_label "Vref_2V5" (shape input) (at 68.58 109.22 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 018c021b-62e1-4015-8305-85060a1feb97)
+    (uuid 04f18b12-083a-41b2-a74d-a2f2f54d3493)
   )
-  (hierarchical_label "Vref_2V5" (shape input) (at 340.36 91.44 0) (fields_autoplaced)
+  (hierarchical_label "Vref_2V5" (shape input) (at 349.25 105.41 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 992817a6-9300-4832-b1d0-e22425128dc3)
   )
-  (hierarchical_label "Vref_2V5" (shape input) (at 340.36 147.32 0) (fields_autoplaced)
+  (hierarchical_label "Vref_2V5" (shape input) (at 347.98 161.29 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid fc158b95-d47e-4e73-9d5b-70407f40f3b3)
+  )
+
+  (symbol (lib_id "Device:C_Small") (at 345.44 148.59 0) (mirror x) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 01885674-2ce3-43d1-9e4c-532d7b5c2c7b)
+    (property "Reference" "C36" (at 341.63 149.86 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "2n2 50V" (at 351.79 149.86 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 345.44 148.59 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 345.44 148.59 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Description" "Capa 0603" (at 345.44 148.59 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Man." "Kemet" (at 345.44 148.59 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Man. Ref." "C0603C222K5RACTU" (at 345.44 148.59 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Length" "1.6" (at 345.44 148.59 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Width" "0.9" (at 345.44 148.59 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid e4149b75-56a7-4fb4-81f0-d1c3a8a4f79d))
+    (pin "2" (uuid 4489bc89-9e57-45a8-9f86-bc19d1c701f7))
+    (instances
+      (project "elec_Ventouse_2d"
+        (path "/bc05f5da-608c-4912-90e4-36b13d989976/c57a72cd-52be-4705-ba68-0f6c998aa8eb"
+          (reference "C36") (unit 1)
+        )
+      )
+      (project "driver_A"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
+          (reference "C36") (unit 1)
+        )
+      )
+    )
   )
 
   (symbol (lib_name "+3V3_1") (lib_id "power:+3V3") (at 304.8 142.24 0) (unit 1)
@@ -4395,7 +4487,7 @@
           (reference "#PWR044") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "#PWR044") (unit 1)
         )
@@ -4441,7 +4533,7 @@
           (reference "C48") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "C48") (unit 1)
         )
@@ -4487,7 +4579,7 @@
           (reference "TH1") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "TH1") (unit 1)
         )
@@ -4528,7 +4620,7 @@
           (reference "Q6") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "Q6") (unit 1)
         )
@@ -4558,7 +4650,7 @@
           (reference "#PWR039") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "#PWR039") (unit 1)
         )
@@ -4588,7 +4680,7 @@
           (reference "#PWR036") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "#PWR036") (unit 1)
         )
@@ -4618,7 +4710,7 @@
           (reference "#PWR074") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "#PWR074") (unit 1)
         )
@@ -4659,7 +4751,7 @@
           (reference "Q4") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "Q4") (unit 1)
         )
@@ -4705,7 +4797,7 @@
           (reference "R46") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "R46") (unit 1)
         )
@@ -4735,7 +4827,7 @@
           (reference "#PWR093") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "#PWR093") (unit 1)
         )
@@ -4781,7 +4873,7 @@
           (reference "R37") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "R37") (unit 1)
         )
@@ -4808,6 +4900,11 @@
     (instances
       (project "elec_Ventouse_2d"
         (path "/bc05f5da-608c-4912-90e4-36b13d989976/c57a72cd-52be-4705-ba68-0f6c998aa8eb"
+          (reference "#PWR07") (unit 1)
+        )
+      )
+      (project "driver_A"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "#PWR07") (unit 1)
         )
       )
@@ -4852,7 +4949,7 @@
           (reference "C13") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "C13") (unit 1)
         )
@@ -4882,7 +4979,7 @@
           (reference "#PWR078") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "#PWR078") (unit 1)
         )
@@ -4912,7 +5009,7 @@
           (reference "#PWR037") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "#PWR037") (unit 1)
         )
@@ -4942,7 +5039,7 @@
           (reference "#PWR035") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "#PWR035") (unit 1)
         )
@@ -4972,7 +5069,7 @@
           (reference "#PWR09") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "#PWR09") (unit 1)
         )
@@ -4999,6 +5096,11 @@
     (instances
       (project "elec_Ventouse_2d"
         (path "/bc05f5da-608c-4912-90e4-36b13d989976/c57a72cd-52be-4705-ba68-0f6c998aa8eb"
+          (reference "#PWR024") (unit 1)
+        )
+      )
+      (project "driver_A"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "#PWR024") (unit 1)
         )
       )
@@ -5043,7 +5145,7 @@
           (reference "C52") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "C52") (unit 1)
         )
@@ -5073,7 +5175,7 @@
           (reference "#PWR080") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "#PWR080") (unit 1)
         )
@@ -5103,7 +5205,7 @@
           (reference "#PWR010") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "#PWR010") (unit 1)
         )
@@ -5133,9 +5235,39 @@
           (reference "#PWR016") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "#PWR016") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_name "GND_1") (lib_id "power:GND") (at 345.44 152.4 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 481e6a38-f0a9-4652-8097-5b26d0ff8ef1)
+    (property "Reference" "#PWR0101" (at 345.44 158.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 345.44 157.48 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "" (at 345.44 152.4 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 345.44 152.4 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 3abb67ab-1a46-4cb2-b7e7-dc3d7bc213f3))
+    (instances
+      (project "elec_Ventouse_2d"
+        (path "/bc05f5da-608c-4912-90e4-36b13d989976/c57a72cd-52be-4705-ba68-0f6c998aa8eb"
+          (reference "#PWR0101") (unit 1)
+        )
+      )
+      (project "driver_A"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
+          (reference "#PWR0101") (unit 1)
         )
       )
     )
@@ -5181,7 +5313,7 @@
           (reference "J3") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "J3") (unit 1)
         )
@@ -5227,9 +5359,34 @@
           (reference "R35") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "R35") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_name "+3V3_1") (lib_id "power:+3V3") (at 55.88 111.76 270) (mirror x) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 4c2ec95d-13a1-4685-8b55-ccd153e4b365)
+    (property "Reference" "#PWR01" (at 52.07 111.76 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+3V3" (at 59.69 110.49 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "" (at 55.88 111.76 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 55.88 111.76 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 8890ffaa-b32c-411b-9232-353c755bb5e8))
+    (instances
+      (project "driver_A"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
+          (reference "#PWR01") (unit 1)
         )
       )
     )
@@ -5254,6 +5411,11 @@
     (instances
       (project "elec_Ventouse_2d"
         (path "/bc05f5da-608c-4912-90e4-36b13d989976/c57a72cd-52be-4705-ba68-0f6c998aa8eb"
+          (reference "#PWR06") (unit 1)
+        )
+      )
+      (project "driver_A"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "#PWR06") (unit 1)
         )
       )
@@ -5282,7 +5444,7 @@
           (reference "#PWR04") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "#PWR04") (unit 1)
         )
@@ -5328,7 +5490,7 @@
           (reference "C51") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "C51") (unit 1)
         )
@@ -5374,7 +5536,7 @@
           (reference "R16") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "R16") (unit 1)
         )
@@ -5420,7 +5582,7 @@
           (reference "U5") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "U5") (unit 1)
         )
@@ -5466,7 +5628,7 @@
           (reference "R8") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "R8") (unit 1)
         )
@@ -5496,7 +5658,7 @@
           (reference "#PWR079") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "#PWR079") (unit 1)
         )
@@ -5526,7 +5688,7 @@
           (reference "#PWR0108") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "#PWR0108") (unit 1)
         )
@@ -5572,7 +5734,7 @@
           (reference "C46") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "C46") (unit 1)
         )
@@ -5618,7 +5780,7 @@
           (reference "C39") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "C39") (unit 1)
         )
@@ -5659,7 +5821,7 @@
           (reference "Q2") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "Q2") (unit 1)
         )
@@ -5705,7 +5867,7 @@
           (reference "U6") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "U6") (unit 1)
         )
@@ -5735,7 +5897,7 @@
           (reference "#PWR011") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "#PWR011") (unit 1)
         )
@@ -5781,7 +5943,7 @@
           (reference "C25") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "C25") (unit 1)
         )
@@ -5827,7 +5989,7 @@
           (reference "D5") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "D5") (unit 1)
         )
@@ -5873,7 +6035,7 @@
           (reference "R34") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "R34") (unit 1)
         )
@@ -5919,7 +6081,7 @@
           (reference "R36") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "R36") (unit 1)
         )
@@ -5965,7 +6127,7 @@
           (reference "R42") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "R42") (unit 1)
         )
@@ -6011,7 +6173,7 @@
           (reference "C6") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "C6") (unit 1)
         )
@@ -6057,7 +6219,7 @@
           (reference "C45") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "C45") (unit 1)
         )
@@ -6103,7 +6265,7 @@
           (reference "R18") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "R18") (unit 1)
         )
@@ -6149,7 +6311,7 @@
           (reference "C47") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "C47") (unit 1)
         )
@@ -6195,7 +6357,7 @@
           (reference "C7") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "C7") (unit 1)
         )
@@ -6241,7 +6403,7 @@
           (reference "R24") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "R24") (unit 1)
         )
@@ -6271,6 +6433,57 @@
           (reference "#PWR012") (unit 1)
         )
       )
+      (project "driver_A"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
+          (reference "#PWR012") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:C_Small") (at 346.71 93.98 0) (mirror x) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid a58a74a8-7b46-4bae-bf6f-dd00934a3e73)
+    (property "Reference" "C35" (at 349.25 91.44 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "2n2 50V" (at 353.06 96.52 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 346.71 93.98 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 346.71 93.98 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Description" "Capa 0603" (at 346.71 93.98 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Man." "Kemet" (at 346.71 93.98 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Man. Ref." "C0603C222K5RACTU" (at 346.71 93.98 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Length" "1.6" (at 346.71 93.98 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Width" "0.9" (at 346.71 93.98 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 821bf479-62b5-4677-86ff-f43ec859b018))
+    (pin "2" (uuid b6de15ef-130a-4ffb-9e04-d587a4a243b7))
+    (instances
+      (project "elec_Ventouse_2d"
+        (path "/bc05f5da-608c-4912-90e4-36b13d989976/c57a72cd-52be-4705-ba68-0f6c998aa8eb"
+          (reference "C35") (unit 1)
+        )
+      )
+      (project "driver_A"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
+          (reference "C35") (unit 1)
+        )
+      )
     )
   )
 
@@ -6296,7 +6509,7 @@
           (reference "#PWR05") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "#PWR05") (unit 1)
         )
@@ -6342,7 +6555,7 @@
           (reference "R38") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "R38") (unit 1)
         )
@@ -6372,7 +6585,7 @@
           (reference "#PWR089") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "#PWR089") (unit 1)
         )
@@ -6418,7 +6631,7 @@
           (reference "C8") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "C8") (unit 1)
         )
@@ -6468,6 +6681,11 @@
           (reference "J2") (unit 1)
         )
       )
+      (project "driver_A"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
+          (reference "J2") (unit 1)
+        )
+      )
     )
   )
 
@@ -6493,7 +6711,7 @@
           (reference "#PWR070") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "#PWR070") (unit 1)
         )
@@ -6539,7 +6757,7 @@
           (reference "C29") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "C29") (unit 1)
         )
@@ -6585,7 +6803,7 @@
           (reference "C9") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "C9") (unit 1)
         )
@@ -6631,7 +6849,7 @@
           (reference "C53") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "C53") (unit 1)
         )
@@ -6658,6 +6876,11 @@
     (instances
       (project "elec_Ventouse_2d"
         (path "/bc05f5da-608c-4912-90e4-36b13d989976/c57a72cd-52be-4705-ba68-0f6c998aa8eb"
+          (reference "#PWR023") (unit 1)
+        )
+      )
+      (project "driver_A"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "#PWR023") (unit 1)
         )
       )
@@ -6697,9 +6920,55 @@
           (reference "Q1") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "Q1") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:R_Small") (at 339.09 144.78 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid cb3f5c6b-f372-433b-aa7d-c64d3400a3ae)
+    (property "Reference" "R22" (at 337.82 142.24 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Value" "1k" (at 342.9 142.24 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 339.09 144.78 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 339.09 144.78 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Length" "1.6" (at 339.09 144.78 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Width" "0.9" (at 339.09 144.78 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Description" "Res. 0603" (at 339.09 144.78 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Man." "Vishay" (at 339.09 144.78 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Man. Ref." "CRCW06031K00JNEAC" (at 339.09 144.78 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid a8cea8ff-5b64-485c-a0aa-7d4eb58fc315))
+    (pin "2" (uuid 6b00eea5-3cb1-4fa6-9907-fa03a5fe9683))
+    (instances
+      (project "elec_Ventouse_2d"
+        (path "/bc05f5da-608c-4912-90e4-36b13d989976/c57a72cd-52be-4705-ba68-0f6c998aa8eb"
+          (reference "R22") (unit 1)
+        )
+      )
+      (project "driver_A"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
+          (reference "R22") (unit 1)
         )
       )
     )
@@ -6743,7 +7012,7 @@
           (reference "C11") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "C11") (unit 1)
         )
@@ -6784,7 +7053,7 @@
           (reference "Q5") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "Q5") (unit 1)
         )
@@ -6814,7 +7083,7 @@
           (reference "#PWR034") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "#PWR034") (unit 1)
         )
@@ -6855,9 +7124,39 @@
           (reference "Q3") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "Q3") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_name "GND_1") (lib_id "power:GND") (at 346.71 97.79 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid d4c13e75-7af0-4fae-8962-1180077f7107)
+    (property "Reference" "#PWR0100" (at 346.71 104.14 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 346.71 102.87 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "" (at 346.71 97.79 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 346.71 97.79 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid e195d8b5-8afc-4dd9-ab0f-f55ad2df2ed9))
+    (instances
+      (project "elec_Ventouse_2d"
+        (path "/bc05f5da-608c-4912-90e4-36b13d989976/c57a72cd-52be-4705-ba68-0f6c998aa8eb"
+          (reference "#PWR0100") (unit 1)
+        )
+      )
+      (project "driver_A"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
+          (reference "#PWR0100") (unit 1)
         )
       )
     )
@@ -6885,7 +7184,7 @@
           (reference "#PWR073") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "#PWR073") (unit 1)
         )
@@ -6915,7 +7214,7 @@
           (reference "#PWR019") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "#PWR019") (unit 1)
         )
@@ -6945,7 +7244,7 @@
           (reference "#PWR017") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "#PWR017") (unit 1)
         )
@@ -6975,7 +7274,7 @@
           (reference "#PWR075") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "#PWR075") (unit 1)
         )
@@ -7005,7 +7304,7 @@
           (reference "#PWR014") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "#PWR014") (unit 1)
         )
@@ -7035,7 +7334,7 @@
           (reference "#PWR038") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "#PWR038") (unit 1)
         )
@@ -7043,26 +7342,47 @@
     )
   )
 
-  (symbol (lib_name "+3V3_1") (lib_id "power:+3V3") (at 55.88 109.22 270) (mirror x) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid f16ab110-e6b1-49b8-9326-e4c74a42b11e)
-    (property "Reference" "#PWR022" (at 52.07 109.22 0)
+  (symbol (lib_id "Device:R_Small") (at 340.36 88.9 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid eab88a00-06b4-4ba5-b782-3db21c6a591a)
+    (property "Reference" "R21" (at 345.44 86.36 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Value" "1k" (at 340.36 86.36 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (at 340.36 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "+3V3" (at 59.69 109.22 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "" (at 55.88 109.22 0)
+    (property "Datasheet" "~" (at 340.36 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 55.88 109.22 0)
+    (property "Length" "1.6" (at 340.36 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid e5001917-7789-4ee8-8d90-090d7c22fbe1))
+    (property "Width" "0.9" (at 340.36 88.9 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Description" "Res. 0603" (at 340.36 88.9 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Man." "Vishay" (at 340.36 88.9 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Man. Ref." "CRCW06031K00JNEAC" (at 340.36 88.9 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 91d26cb2-a106-4bb0-bb80-db29ea243f19))
+    (pin "2" (uuid ded5671e-8735-4288-bb45-beda5a5e96c1))
     (instances
       (project "elec_Ventouse_2d"
         (path "/bc05f5da-608c-4912-90e4-36b13d989976/c57a72cd-52be-4705-ba68-0f6c998aa8eb"
-          (reference "#PWR022") (unit 1)
+          (reference "R21") (unit 1)
+        )
+      )
+      (project "driver_A"
+        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
+          (reference "R21") (unit 1)
         )
       )
     )
@@ -7139,7 +7459,7 @@
           (reference "U1") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "U1") (unit 1)
         )
@@ -7169,11 +7489,15 @@
           (reference "#PWR015") (unit 1)
         )
       )
-      (project "driver"
+      (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "#PWR015") (unit 1)
         )
       )
     )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
   )
 )

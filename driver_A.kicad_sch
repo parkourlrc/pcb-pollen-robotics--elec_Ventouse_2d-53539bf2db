@@ -4410,6 +4410,10 @@
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 04f18b12-083a-41b2-a74d-a2f2f54d3493)
   )
+  (hierarchical_label "Vbus_div_17" (shape input) (at 55.88 104.14 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 66336fa7-dddd-4c60-97de-7301cf58a8d5)
+  )
   (hierarchical_label "Vref_2V5" (shape input) (at 349.25 105.41 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 992817a6-9300-4832-b1d0-e22425128dc3)
@@ -4876,36 +4880,6 @@
       (project "driver_A"
         (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
           (reference "R37") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_name "VBUS_1") (lib_id "power:VBUS") (at 55.88 104.14 270) (mirror x) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 30dceafe-2340-449d-b872-21f99e690c12)
-    (property "Reference" "#PWR07" (at 52.07 104.14 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "VBUS" (at 59.69 104.14 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "" (at 55.88 104.14 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 55.88 104.14 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 9d44fad6-592b-41f0-baf3-70e1128446db))
-    (instances
-      (project "elec_Ventouse_2d"
-        (path "/bc05f5da-608c-4912-90e4-36b13d989976/c57a72cd-52be-4705-ba68-0f6c998aa8eb"
-          (reference "#PWR07") (unit 1)
-        )
-      )
-      (project "driver_A"
-        (path "/bc93fac5-21da-4412-a89b-84fd8033d345"
-          (reference "#PWR07") (unit 1)
         )
       )
     )

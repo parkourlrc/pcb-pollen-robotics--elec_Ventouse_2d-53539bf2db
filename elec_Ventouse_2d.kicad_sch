@@ -182,9 +182,6 @@
     )
   )
 
-  (junction (at 236.22 132.08) (diameter 0) (color 0 0 0 0)
-    (uuid a30c0a91-2b59-4821-9f33-15d9e3b8aaac)
-  )
   (junction (at 119.38 129.54) (diameter 0) (color 0 0 0 0)
     (uuid c2f8b301-ca57-4e5c-883b-e1cefec95447)
   )
@@ -212,10 +209,6 @@
     (uuid 2fb933a6-4b49-4dd0-91be-6867700ea5fb)
   )
 
-  (wire (pts (xy 243.84 129.54) (xy 243.84 132.08))
-    (stroke (width 0) (type default))
-    (uuid 30741a6e-999a-41a1-af31-0d6ca4f22889)
-  )
   (wire (pts (xy 114.3 148.59) (xy 119.38 148.59))
     (stroke (width 0) (type default))
     (uuid 39613943-b0d2-4d84-88a2-b05d77c19ab1)
@@ -247,10 +240,6 @@
     (uuid 5e2e2d78-f1f1-4b12-9681-03f080e751de)
   )
 
-  (wire (pts (xy 236.22 132.08) (xy 243.84 132.08))
-    (stroke (width 0) (type default))
-    (uuid 7286e7ae-532e-4216-8bac-5f4e2ac11813)
-  )
   (wire (pts (xy 119.38 107.95) (xy 119.38 129.54))
     (stroke (width 0) (type default))
     (uuid 73f74ae4-0f72-49e3-8053-c7bd7a491981)
@@ -1764,7 +1753,7 @@
     )
   )
 
-  (text "Mounting Holes M2,5" (at 226.06 120.65 0)
+  (text "Mounting Holes M2,5" (at 223.52 120.65 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 00da11bc-47d7-439d-887e-e0de1afb2fea)
   )
@@ -1799,6 +1788,10 @@
   (text "Initial drawing" (at 97.79 44.45 0)
     (effects (font (size 2.0066 2.0066)) (justify left bottom))
     (uuid 8871bca3-55b7-4e24-a38f-cc9e184422ab)
+  )
+  (text "ToDo:\n - passer sur du XT30 (1 ou 2 ?)" (at 52.07 58.42 0)
+    (effects (font (size 2.0066 2.0066)) (justify left bottom))
+    (uuid 8ac99fcb-25de-4227-ae9b-cd3ee3d9809c)
   )
   (text "\"Ventouse_2d\" is a 2-motors power board designed for Reachy 2.\nIt operates with the Poulpe_2d board."
     (at 24.13 29.21 0)
@@ -1939,34 +1932,6 @@
       (project "elec_Ventouse_2d"
         (path "/bc05f5da-608c-4912-90e4-36b13d989976"
           (reference "H2") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Mechanical:MountingHole_Pad") (at 243.84 127 0) (unit 1)
-    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 6391d0ce-45ad-40cc-9871-d87d94b61c99)
-    (property "Reference" "H3" (at 246.38 125.73 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Value" "MountingHole_Pad" (at 246.38 127 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_ISO14580_Pad_TopBottom" (at 243.84 127 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 243.84 127 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Description" "Mounting Hole" (at 243.84 127 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 90750b83-29f1-433a-92ed-1ed3b28d67fc))
-    (instances
-      (project "elec_Ventouse_2d"
-        (path "/bc05f5da-608c-4912-90e4-36b13d989976"
-          (reference "H3") (unit 1)
         )
       )
     )

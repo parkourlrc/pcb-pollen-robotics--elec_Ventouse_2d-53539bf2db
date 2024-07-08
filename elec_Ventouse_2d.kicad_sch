@@ -6405,6 +6405,11 @@
     (effects (font (size 2.0066 2.0066)) (justify left bottom))
     (uuid 2520f966-d268-4d70-9674-db30a65b367c)
   )
+  (text "ToDo :\n - passer en 4 couches\n - masse des aop décalée par rapport au \n   courant de retour des moteurs\n - Pas de frein thermique sur les phases, le bus, \n   bref, là où il y a du courant.\n - DC-DC sur le 3V3\n - AOP alimenté en 5V ?\n - capa découplage sur la ref 2V5 au plus près\n   des AOP\n - les capas 2,2uF doivent être au plus près du \n   gnd et du vbus au niveau des mosfets.\n - capa 100nF/63V entre chaque phase et la masse.\n\n\n-----------------------\n - CEM : proximité AOP/PWM\n - retour de masse des MOS\n - ref de tension 5V/0V sur AOP (/!\\ + alim 5V)\n - "
+    (at 121.92 114.3 0)
+    (effects (font (size 2.0066 2.0066)) (justify left bottom))
+    (uuid 2b72284d-e19b-452a-b262-824a0c2e8f47)
+  )
   (text "Fiducials" (at 203.2 128.905 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 3855db64-4801-445b-b83e-9e7849cbe5fc)

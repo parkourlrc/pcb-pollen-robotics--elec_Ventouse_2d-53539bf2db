@@ -222,10 +222,6 @@
     (stroke (width 0) (type default))
     (uuid 46926180-d6ff-4799-967e-b63c5ef7a529)
   )
-  (polyline (pts (xy 24.13 52.07) (xy 182.88 52.07))
-    (stroke (width 0) (type default))
-    (uuid 4fbc0b81-d2a3-4383-af77-b7e050912695)
-  )
   (polyline (pts (xy 66.04 35.56) (xy 66.04 66.04))
     (stroke (width 0) (type default))
     (uuid 50de4fe8-c571-405c-8831-0dce3f687893)
@@ -6413,11 +6409,6 @@
     (effects (font (size 2.0066 2.0066)) (justify left bottom))
     (uuid 2520f966-d268-4d70-9674-db30a65b367c)
   )
-  (text "ToDo :\n - passer en 4 couches\n - masse des aop décalée par rapport au \n   courant de retour des moteurs\n - Pas de frein thermique sur les phases, le bus, \n   bref, là où il y a du courant.\n - DC-DC sur le 3V3\n - AOP alimenté en 5V ?\n - capa découplage sur la ref 2V5 au plus près\n   des AOP\n - les capas 2,2uF doivent être au plus près du \n   gnd et du vbus au niveau des mosfets.\n - capa 100nF/63V entre chaque phase et la masse.\n\n\n-----------------------\n - CEM : proximité AOP/PWM\n - retour de masse des MOS\n - ref de tension 5V/0V sur AOP (/!\\ + alim 5V)\n - "
-    (at 129.54 124.46 0)
-    (effects (font (size 2.0066 2.0066)) (justify left bottom))
-    (uuid 2b72284d-e19b-452a-b262-824a0c2e8f47)
-  )
   (text "Fiducials" (at 203.2 128.905 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 3855db64-4801-445b-b83e-9e7849cbe5fc)
@@ -6442,8 +6433,8 @@
     (effects (font (size 2.0066 2.0066)) (justify left bottom))
     (uuid 6ba5f946-7642-42ea-8d0b-dc007a7d9ecb)
   )
-  (text " - [fix] DC-DC for 3V3\n - [fix] OpA are now 5V-powered/referenced\n - [fix] Enhanced filtering of MOSFETs\n - [TODO] Noise level of current sense"
-    (at 96.52 59.69 0)
+  (text " - [fix] DC-DC for 3V3\n - [fix] OpA are now 5V-powered/referenced\n - [fix] Enhanced filtering of MOSFETs\n - [fix] Switch to 4-layers to improve the grounding \n         of current sense amps."
+    (at 96.52 62.23 0)
     (effects (font (size 2.0066 2.0066)) (justify left bottom))
     (uuid 7e6ad4fe-725a-422c-a6ef-6a7a7ef2209a)
   )

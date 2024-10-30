@@ -6433,8 +6433,8 @@
     (effects (font (size 2.0066 2.0066)) (justify left bottom))
     (uuid 6ba5f946-7642-42ea-8d0b-dc007a7d9ecb)
   )
-  (text " - [fix] DC-DC for 3V3\n - [fix] OpA are now 5V-powered/referenced\n - [fix] Enhanced filtering of MOSFETs\n - [fix] Switch to 4-layers to improve the grounding \n         of current sense amps."
-    (at 96.52 62.23 0)
+  (text "[fixed] DC-DC for 3V3\n[fixed] OpA are now 5V-powered/referenced\n[fixed] Enhanced filtering of MOSFETs\n[fixed] Switched to 4-layers to improve the grounding \n        of current sense amps."
+    (at 97.79 62.23 0)
     (effects (font (size 2.0066 2.0066)) (justify left bottom))
     (uuid 7e6ad4fe-725a-422c-a6ef-6a7a7ef2209a)
   )

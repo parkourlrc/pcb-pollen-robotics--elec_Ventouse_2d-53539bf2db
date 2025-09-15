@@ -14645,7 +14645,16 @@
 				(hide yes)
 			)
 		)
-		(property "FT Position Offset" ""
+		(property "FT Position Offset" "0.0,-2.30"
+			(at 381 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Rotation Offset" "180"
 			(at 381 101.6 0)
 			(effects
 				(font

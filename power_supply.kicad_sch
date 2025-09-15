@@ -9079,6 +9079,15 @@
 				(hide yes)
 			)
 		)
+		(property "FT Position Offset" "0.0,-2.30"
+			(at 44.45 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "999b5831-b54f-42b7-aa0b-aa9a5a7a242e")
 		)
@@ -9935,7 +9944,7 @@
 				(hide yes)
 			)
 		)
-		(property "FT Position Offset" ""
+		(property "FT Position Offset" "0.0,0.6"
 			(at 46.99 82.55 0)
 			(effects
 				(font
